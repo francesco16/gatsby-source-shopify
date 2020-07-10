@@ -118,61 +118,16 @@ export const PRODUCTS_QUERY = `
           cursor
           node {
             availableForSale
-            createdAt
-            description
-            descriptionHtml
             handle
             id
-            images(first: 250) {
-              edges {
-                node {
-                  id
-                  altText
-                  originalSrc
-                }
-              }
-            }
-            onlineStoreUrl
-            options {
-              id
-              name
-              values
-            }
-            priceRange {
-              minVariantPrice {
-                amount
-                currencyCode
-              }
-              maxVariantPrice {
-                amount
-                currencyCode
-              }
-            }
-            productType
-            publishedAt
-            tags
             title
-            updatedAt
-            variants(first: 250) {
+            variants(first: 50) {
               edges {
                 node {
                   availableForSale
-                  compareAtPrice
                   id
-                  image {
-                    altText
-                    id
-                    originalSrc
-                  }
                   price
-                  selectedOptions {
-                    name
-                    value
-                  }
-                  sku
                   title
-                  weight
-                  weightUnit
                 }
               }
             }
